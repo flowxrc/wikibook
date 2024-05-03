@@ -10,7 +10,7 @@ npm install wikibook-cli --save-dev
 ## Usage
 ```js
 const wikicli = require("wikibook-cli");
-import { wikicli } from "wikibook-cli";
+import * as wikicli from "wikibook-cli";
 
 wikicli.build({
     map: "wikimap.json",

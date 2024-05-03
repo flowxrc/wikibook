@@ -1,4 +1,4 @@
-const wikicli = require("wikibook-cli");
+import * as wikicli from "wikibook-cli";
 
 wikicli.build({
     map: "src/wikimap.json",

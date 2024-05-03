@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "devDependencies": {
+    "wikibook-cli": "^1.0.0"
+  }
+}
