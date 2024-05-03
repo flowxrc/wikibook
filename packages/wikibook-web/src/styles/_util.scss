@@ -1,0 +1,35 @@
+@use "theme" as theme;
+
+@mixin fixStupidInput {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+@mixin hoverable {
+    cursor: pointer;
+}
+
+@mixin hoverable-text-normal-primary {
+    @include hoverable;
+
+    color: theme.$text-color;
+    transition: theme.$transition-time color;
+    &:hover { color: theme.$primary-color }
+}
+
+@mixin hoverable-text-primary {
+    @include hoverable;
+    
+    color: theme.$primary-color;
+    transition: theme.$transition-time color;
+    &:hover { color: theme.$primary-hover-color }
+}
+
+@mixin item-spacing($margin-size) {
+    margin-top: $margin-size;
+    margin-bottom: $margin-size;
+    
+    &:first-child { margin-top: 0; }
+    &:last-child { margin-bottom: 0; }
+}

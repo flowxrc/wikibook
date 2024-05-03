@@ -1,0 +1,36 @@
+@use "theme" as theme;
+@use "util" as util;
+
+.menu {
+    float: left;
+    width: theme.$menu-width;
+    height: 100svh;
+    background-color: theme.$menu-color;
+
+    * { font-size: theme.$menu-text-size; }
+
+    .search {
+        @include util.fixStupidInput;
+
+        border: none;
+        width: 100%;
+        background-color: theme.$search-color;
+        padding: theme.$menu-child-padding;
+        color: theme.$text-color;
+
+        &::placeholder { color: theme.$search-placeholder-color; }
+    }
+
+    .reference {
+        @include util.hoverable-text-normal-primary;
+
+        border: none;
+        width: 100%;
+        padding: theme.$menu-child-padding;
+        text-align: left;
+        background: none;
+
+        &.sub { padding-left: theme.$menu-child-sub-padding; }
+        &.active { color: theme.$primary-color; }
+    }
+}

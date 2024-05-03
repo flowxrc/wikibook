@@ -1,0 +1,41 @@
+@use "theme" as theme;
+@use "util" as util;
+
+@mixin heading($font-weight, $font-size, $spacing) {
+    @include util.item-spacing($spacing);
+
+    font-weight: $font-weight;
+    font-size: $font-size;
+}
+
+.page {
+    $page-padding: 80px;
+    $heading-spacing: 20px;
+
+    float: right;
+    padding: $page-padding;
+    height: calc(100svh - ($page-padding * 2));
+    width: calc(100% - theme.$menu-width - ($page-padding * 2));
+
+    h1 { @include heading(700, 32px, 30px); }
+    h2 { @include heading(600, 24px, 20px); }
+    h3 { @include heading(600, 18px, 20px); }
+
+    p {
+        font-weight: normal;
+        font-size: 16px;
+    }
+
+    code {
+        $code-padding: 10px;
+
+        background-color: #060606;
+        border: 2px solid rgba(#fff, 0.08);
+        border-radius: 10px;
+        padding: $code-padding;
+        font-family: "Consolas";
+        margin: $code-padding 0;
+    }
+
+    a { @include util.hoverable-text-primary; }
+}

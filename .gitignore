@@ -1,0 +1,7 @@
+# Builds
+dist
+packages/wikibook-cli/src/web
+
+# Node Files
+node_modules
+package-lock.json

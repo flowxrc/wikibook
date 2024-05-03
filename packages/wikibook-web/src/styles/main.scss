@@ -1,0 +1,22 @@
+@use "theme" as theme;
+
+@use "menu";
+@use "page";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+    outline: none;
+    margin: 0;
+    font-family: "Inter";
+    overflow: auto;
+
+    &::-webkit-scrollbar { width: theme.$scrollbar-width; }
+    &::-webkit-scrollbar-track { background: theme.$scrollbar-track-color; }
+    &::-webkit-scrollbar-thumb { background: theme.$scrollbar-thumb-color; }
+}
+
+body {
+    background-color: theme.$page-color;
+    color: theme.$text-color;
+}

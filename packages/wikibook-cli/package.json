@@ -1,0 +1,26 @@
+{
+  "name": "wikibook-cli",
+  "version": "1.0.0",
+  "description": "A cli for building your wikibook",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flowxrc/wikibook.git"
+  },
+  "keywords": [
+    "cli",
+    "engine",
+    "wiki"
+  ],
+  "author": "flowxrc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flowxrc/wikibook/issues"
+  },
+  "homepage": "https://github.com/flowxrc/wikibook#readme",
+  "dependencies": {
+    "fs-jetpack": "^5.1.0",
+    "glob": "^10.3.12",
+    "jsdom": "^24.0.0"
+  }
+}

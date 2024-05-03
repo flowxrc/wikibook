@@ -1,0 +1,24 @@
+{
+  "name": "wikibook-web",
+  "version": "1.0.0",
+  "description": "An SASS + html page built for the wikibook",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flowxrc/wikibook.git"
+  },
+  "author": "flowxrc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flowxrc/wikibook/issues"
+  },
+  "homepage": "https://github.com/flowxrc/wikibook#readme",
+  "devDependencies": {
+    "fs-jetpack": "^5.1.0",
+    "glob": "^10.3.12",
+    "sass": "^1.76.0"
+  }
+}

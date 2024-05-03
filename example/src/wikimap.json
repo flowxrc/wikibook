@@ -1,0 +1,20 @@
+{
+    "title": "My Wiki",
+    "pages": "src/pages",
+    "resources": "src/resources",
+    "categories": [
+        {
+            "title": "Client",
+            "pages": [
+                { "title": "Events", "contentPath": "client/events.html" },
+                { "title": "Browser", "contentPath": "client/browser.html" }
+            ]
+        },
+        {
+            "title": "Server",
+            "pages": [
+                { "title": "Events", "contentPath": "server/events.html" }
+            ]
+        }
+    ]
+}
